@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link rel="stylesheet" href="style.css">
+    <title>Hilarious Atlantic</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="/">
+        <img src="./img/logo-md.png" alt="Hilarious Atlantic Logo">
+      </a>
+      <nav>
+        <a href="#">Members</a>
+        <a href="#">Projects</a>
+        <a href="#">Articles</a>
+      </nav>
+    </header>
+
+    <section>
+      <input id="fun-input" type="text" value="The best coders around...">
+    </section>
+
+    <script type="text/javascript">
+
+      document.addEventListener("DOMContentLoaded", function(event) {
+
+        let input = document.getElementById('fun-input');
+        input.focus();
+        input.selectionStart = input.selectionEnd = 1000;
+
+      });
+
+    </script>
+
+  </body>
+</html>
